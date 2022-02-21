@@ -92,7 +92,7 @@ class XlsxTemplate
     protected substituteHyperlinks(sheetFilename : any, substitutions : any) : void;
     protected substituteTableColumnHeaders(tables : any, substitutions : any) : void;
     protected insertCellValue(cell : any, substitution : any) : string;
-    protected substituteArray(cells : any[], cell : any, substitution : any);
+    protected substituteArray(cells : any[], cell : any, substitution : any, placeholder : TemplatePlaceholder);
     protected substituteTable(row : any, newTableRows : any, cells : any[], cell : any, namedTables : any, substitution : any, key : any, placeholder : TemplatePlaceholder, drawing : etree.ElementTree) : any;
     protected substituteImage(cell : any, string : string, placeholder: TemplatePlaceholder, substitution : any, drawing : etree.ElementTree) : boolean
     protected cloneElement(element : any, deep? : any) : any;
